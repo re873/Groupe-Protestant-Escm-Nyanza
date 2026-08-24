@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Groupe Protestant ESCLM Nyanza</title>
+  <link rel="icon" type="image/jpg" href="images/logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>✝ Groupe Protestant ESCLM Nyanza</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="leaders.html">Leaders</a>
+  <a href="choirs.html">Choirs</a>
+  <a href="events.html">Events</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Slideshow hero -->
+<section class="bg-slideshow" style="display:flex;align-items:center;justify-content:center;padding:40px 20px;">
+  <div class="welcome">
+    <h2 style="margin-bottom:12px;">Who We Are</h2>
+    <p>
+      We are a student‑led Protestant fellowship committed to worship, fellowship, discipleship, and service.
+      We meet weekly for prayer and Bible study, organize outreach, and help students grow as faithful leaders
+      in school and society. Our values are unity, humility, integrity, accountability, and excellence.
+    </p>
+  </div>
+</section>
+
+<div class="container">
+  <section>
+    <h2>History & Focus</h2>
+    <p>
+      Rooted in Scripture and guided by the Holy Spirit, the group has supported students for years through
+      mentorship, music ministry, and community impact. We collaborate with local churches and campus ministries
+      to serve Nyanza and beyond. Our focus includes spiritual growth, leadership development, worship arts,
+      and compassionate service to those in need.
+    </p>
+  </section>
+
+  <!-- Choirs part (no background slideshow here) -->
+  <section>
+    <h2>Our Choirs</h2>
+
+    <div class="choir-section">
+      <h3>Abahiriwe Choir</h3>
+      <p>Leads worship in services and special events, and trains young vocalists and instrumentalists.</p>
+      <div class="gallery">
+        <img src="images1/abahiriwe1.jpeg" alt="Abahiriwe 1" />
+        <img src="images1/abahiriwe2.jpeg" alt="Abahiriwe 2" />
+        <img src="images1/abahiriwe3.jpeg" alt="Abahiriwe 3" />
+      </div>
+    </div>
+
+    <div class="choir-section">
+      <h3>Groupe De Louange </h3>
+      <p>Ministers through contemporary praise, outreach concerts, and inter‑school fellowships.</p>
+      <div class="gallery">
+        <img src="images1/louange1.jpeg" alt="Louange 1" />
+        <img src="images1/louange2.jpeg" alt="Louange 2" />
+        <img src="images1/louange3.jpeg" alt="Louange 3" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2026 Groupe Protestant ESCLM Nyanza
+</footer>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out;
+}
+</style>
+
+<script>
+// List of background images
+const backgrounds = [
+  "images1/bg2.jpeg",
+  "images1/bg1.jpeg",
+  "images1/bg3.jpeg",
+  "images1/bg4.jpeg"
+];
+
+let bgIndex = 0;
+
+function changeBackground() {
+  document.body.style.backgroundImage = `url('${backgrounds[bgIndex]}')`;
+  bgIndex = (bgIndex + 1) % backgrounds.length; // loop images
+}
+
+// change immediately on load
+changeBackground();
+
+// change every 6 seconds
+setInterval(changeBackground, 6000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

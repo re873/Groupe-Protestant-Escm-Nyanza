@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Groupe Protestant ESCLM Nyanza</title>
+  <link rel="icon" type="image/jpg" href="images/logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>✝ Groupe Protestant ESCLM Nyanza</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="leaders.html">Leaders</a>
+  <a href="choirs.html">Choirs</a>
+  <a href="events.html">Events</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Hero with background slideshow -->
+<section class="bg-slideshow" style="display:flex;align-items:center;justify-content:center;padding:40px 20px;">
+  <div class="welcome">
+    <h2 style="margin-bottom:12px;">Welcome to Our Fellowship</h2>
+    <p>
+      We are a Christ‑centered student community in Rwanda (Southern Province, Nyanza District, Busasamana Sector).
+	  Where we  act in<B> ECOLE DES SCIENCES SAINT LOUIS DE MONTFORT  NYANZA<B>
+			Together we worship, grow through Scripture, and serve our schools and neighborhoods. Explore our story,
+      choirs, leaders, and events — and join us as we follow Jesus with joy and excellence.
+    </p>
+  </div>
+</section>
+
+<div class="container">
+  <section>
+    <h2>Our Mission</h2>
+    <p>
+      To nurture students into mature disciples of Christ through prayer, worship, Bible study, mentoring,
+      and community service — raising servant leaders who influence society with love and truth.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Vision</h2>
+    <p>
+      A generation of students rooted in Scripture and excellence, shining the light of Christ in Rwanda
+      and beyond through character, compassion, and bold witness.
+    </p>
+  </section>
+
+  <section>
+    <h2>Photo Highlights</h2>
+    <div class="gallery">
+      <img src="images1/highlight1.jpeg" alt="Highlight 1" />
+      <img src="images1/highlight2.jpeg" alt="Highlight 2" />
+      <img src="images1/highlight3.jpeg" alt="Highlight 3" />
+      <img src="images1/highlight4.jpeg" alt="Highlight 4" />
+      <img src="images1/highlight5.jpeg" alt="Highlight 5" />
+      <img src="images1/highlight6.jpeg" alt="Highlight 6" />
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2026 Groupe Protestant ESCLM Nyanza
+</footer>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out;
+}
+</style>
+
+<script>
+// List of background images
+const backgrounds = [
+  "images1/bg1.jpeg",
+  "images1/bg2.jpeg",
+  "images1/bg3.jpeg",
+  "images1/bg4.jpeg"
+]; 
+
+let bgIndex = 0;
+
+function changeBackground() {
+  document.body.style.backgroundImage = `url('${backgrounds[bgIndex]}')`;
+  bgIndex = (bgIndex + 1) % backgrounds.length; // loop images
+}
+
+// change immediately on load
+changeBackground();
+
+// change every 6 seconds
+setInterval(changeBackground, 6000);
+</script>
+</body>
+</html>

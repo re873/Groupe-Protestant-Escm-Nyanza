@@ -1,0 +1,129 @@
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Groupe Protestant ESCLM Nyanza</title>
+  <link rel="icon" type="image/jpg" href="images/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8fbff;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 2rem auto;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    .event-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .event-card img, .event-card video {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+    .calendar {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 700px;
+      height: 350px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Groupe Protestant ESCLM Nyanza</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="leaders.html">Leaders</a>
+      <a href="choirs.html">Choirs</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Upcoming Events</h2>
+    <div class="event-card">
+      <h3>Youth Worship Concert</h3>
+      <p><strong>Date:</strong> September 10, 2025</p>
+      <p>A special worship evening featuring both choirs and guest speakers.</p>
+      <img src="images1/event1.jpg" alt="Upcoming Event">
+    </div>
+
+    <div class="event-card">
+      <h3>Bible Study Retreat</h3>
+      <p><strong>Date:</strong> October 20-22, 2025</p>
+      <p>A 3-day retreat dedicated to prayer, worship, and in-depth Bible study.</p>
+      <img src="images1/event2.jpg" alt="Retreat">
+    </div>
+
+    <h2>Past Events</h2>
+    <div class="event-card">
+      <h3>Easter Celebration 2024</h3>
+      <p>A joyful Easter service full of music, dance, and the Word of God.</p>
+      <video controls>
+        <source src="videos/easter2024.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="event-card">
+      <h3>Choir Festival 2023</h3>
+      <p>A celebration of praise through songs by our choirs and visitors.</p>
+      <img src="images1/event3.jpg" alt="Choir Festival">
+    </div>
+
+    <h2>Event Calendar</h2>
+    <div class="calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?src=en.rwanda%23holiday%40group.v.calendar.google.com&ctz=Africa%2FKigali"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Groupe Protestant ESCLM Nyanza - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
